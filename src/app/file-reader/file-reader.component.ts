@@ -14,6 +14,9 @@ export class FileReaderComponent {
     reader.onload = (e: any) => {
       // The file's text will be printed here
       this.fileOutput = e.target.result;
+      //for-Schleife hier mit reinbauen
+      this.fileOutput.search("import");
+      console.log(this.fileOutput);
       //this.fileOutput= this.fileOutput.replaceAll("@", "TEST");
       console.log(this.fileOutput);
     };
