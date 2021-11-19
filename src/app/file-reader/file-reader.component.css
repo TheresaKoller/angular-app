@@ -1,0 +1,16 @@
+table {
+  font-family: arial;
+  font-size:12px;
+  table-layout: auto;     /** Breite der Zelle wird dem Inhalt angepasst*/
+  width: 120px;
+  border: 1px solid black;
+}
+th {
+  background-color:pink;
+}
+td {
+  border: 1px solid grey;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}

@@ -1,2 +1,19 @@
 <input type="file" (change)="onChange($event)">
-<pre>{{fileOutput}} </pre>
+<br>
+
+<table>
+  <tr>
+    <th *ngFor = "let column of headers">
+      {{column}}
+    </th>
+  </tr>
+
+  <tr *ngFor = "let result of rows">
+    <td *ngFor = "let column of headers">
+      {{result}}
+    </td>
+  </tr>
+</table>
+
+<app-test></app-test>
+
